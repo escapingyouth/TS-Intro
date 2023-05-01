@@ -23,6 +23,16 @@ anyType = true;
 anyType();
 anyType.toUpperCase();
 
+// When to use any type
+
+// 1. When we don't know the type of the value that we're trying to store in a variable
+const movies = ['Arrival', 'Nocturnal Animals', 'La La Land'];
+let foundMovie;
+
+for (let movie of movies) {
+	if (movie === 'Arrival') foundMovie = true;
+}
+
 // When to use type annotations
 
 // 1. Function that returns the 'any' type
@@ -40,13 +50,6 @@ for (let i = 0; i < words.length; i++) {
 		foundWord = true;
 	}
 	// words[i] === 'green' ? (foundWord = true) : (foundWord = undefined);
-}
-
-const movies = ['Arrival', 'Nocturnal Animals', 'La La Land'];
-let foundMovie;
-
-for (let movie of movies) {
-	if (movie === 'Arrival') foundMovie = true;
 }
 
 // 3. Variable whose type cannot be inferred correctly
