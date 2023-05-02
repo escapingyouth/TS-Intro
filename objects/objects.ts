@@ -8,6 +8,7 @@ let coordinate: { x: number; y: number } = {
 	x: 10,
 	y: 33
 };
+3;
 
 function randomCoordinate(): { x: number; y: number } {
 	return { x: Math.random(), y: Math.random() };
