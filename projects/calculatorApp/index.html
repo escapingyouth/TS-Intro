@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="calculator-grid">
+			<div class="output">
+				<div data-previous-operand class="previous-operand"></div>
+				<div data-current-operand class="current-operand"></div>
+			</div>
+
+			<button data-all-clear class="btn btn-grey all-clear">C</button>
+			<button data-delete class="btn btn-dark-grey">
+				<img src="assets/delete.svg" alt="delete" />
+			</button>
+			<button data-operation class="btn btn-blue">÷</button>
+
+			<button data-number class="btn btn-dark-grey">7</button>
+			<button data-number class="btn btn-dark-grey">8</button>
+			<button data-number class="btn btn-dark-grey">9</button>
+			<button data-operation class="btn btn-blue">x</button>
+
+			<button data-number class="btn btn-dark-grey">4</button>
+			<button data-number class="btn btn-dark-grey">5</button>
+			<button data-number class="btn btn-dark-grey">6</button>
+			<button data-operation class="btn btn-blue">+</button>
+
+			<button data-number class="btn btn-dark-grey">1</button>
+			<button data-number class="btn btn-dark-grey">2</button>
+			<button data-number class="btn btn-dark-grey">3</button>
+			<button data-operation class="btn btn-blue">-</button>
+
+			<button data-number class="btn btn-dark-grey">.</button>
+			<button data-number class="btn btn-dark-grey">0</button>
+			<button data-equals class="btn btn-blue equals">=</button>
+		</div>
+		<script src="dist/index.js" defer></script>
+	</body>
+</html>
