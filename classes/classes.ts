@@ -1,7 +1,7 @@
 class Player {
 	public readonly first: string;
 	public readonly last: string;
-	protected _score = 0;
+	protected _score: number = 0;
 
 	constructor(first: string, last: string) {
 		(this.first = first), (this.last = last);
