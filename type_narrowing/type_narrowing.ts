@@ -77,7 +77,7 @@ function printName(entity: User | Company) {
 
 interface Cat {
 	name: string;
-	numLives: Number;
+	numLives: number;
 }
 
 interface Dog {
@@ -112,7 +112,7 @@ interface Horse {
 type Animal = Bird | Horse;
 
 const moveAnimal = (animal: Animal) => {
-	let speed;
+	let speed: number;
 	switch (animal.type) {
 		case 'bird':
 			speed = animal.flyingSpeed;
@@ -156,8 +156,8 @@ const errorBag: ErrorContainer = {
 };
 
 // function overloads
-
 type Combinable = string | number;
+
 function add(a: number, b: number): number;
 function add(a: string, b: string): string;
 function add(a: string, b: number): string;

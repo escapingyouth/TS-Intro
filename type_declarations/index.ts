@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 const getData = async () => {
 	try {
 		const response = await axios.get(
