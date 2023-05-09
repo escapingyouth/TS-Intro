@@ -1,13 +1,22 @@
 {
-  "dependencies": {
-    "@types/body-parser": "^1.19.2",
-    "@types/express": "^4.17.17",
-    "@types/node": "^20.1.1",
-    "axios": "^1.4.0",
-    "body-parser": "^1.20.2",
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
+	"scripts": {
+		"serve": "webpack serve",
+		"build": "webpack --config webpack.prod.js"
+	},
+	"dependencies": {
+		"@types/body-parser": "^1.19.2",
+		"@types/express": "^4.17.17",
+		"@types/node": "^20.1.1",
+		"axios": "^1.4.0",
+		"body-parser": "^1.20.2",
+		"express": "^4.18.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22",
+		"ts-loader": "^9.4.2",
+		"typescript": "^5.0.4",
+		"webpack": "^5.82.0",
+		"webpack-cli": "^5.1.1",
+		"webpack-dev-server": "^4.15.0"
+	}
 }
