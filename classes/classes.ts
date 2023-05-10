@@ -29,6 +29,10 @@ const blue = new Player('Blue', 'Steele');
 
 class SuperPlayer extends Player {
 	public isAdmin: boolean = true;
+
+	constructor(first: string, last: string, public id: string) {
+		super(first, last);
+	}
 	maxScore() {
 		this._score = 99999;
 	}
